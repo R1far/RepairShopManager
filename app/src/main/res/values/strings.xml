@@ -1,0 +1,131 @@
+<resources>
+    <string name="app_name">RepairShopManager</string>
+    
+    <!-- Auth Screen Titles -->
+    <string name="login_title">Вход в систему</string>
+    <string name="register_title">Регистрация</string>
+    
+    <!-- Input Hints -->
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Пароль</string>
+    <string name="hint_full_name">ФИО</string>
+    <string name="hint_access_code">Код доступа</string>
+    
+    <!-- Button Labels -->
+    <string name="btn_login">Войти</string>
+    <string name="btn_register">Зарегистрироваться</string>
+    <string name="btn_create_account">Создать аккаунт</string>
+    <string name="btn_already_have_account">Уже есть аккаунт? Войти</string>
+    
+    <!-- Validation Messages -->
+    <string name="error_empty_field">Это поле обязательно</string>
+    <string name="error_invalid_email">Неверный формат email</string>
+    <string name="error_password_too_short">Пароль должен быть минимум 6 символов</string>
+    <string name="error_invalid_full_name">ФИО должно содержать минимум 2 символа</string>
+    <string name="error_all_fields_required">Все поля обязательны для заполнения</string>
+    
+    <!-- Loading Messages -->
+    <string name="loading_login">Вход в систему…</string>
+    <string name="loading_register">Регистрация…</string>
+    
+    <!-- Success Messages -->
+    <string name="success_login">Добро пожаловать!</string>
+    <string name="success_register">Регистрация успешна!</string>
+    
+    <!-- General -->
+    <string name="please_wait">Пожалуйста, подождите…</string>
+    
+    <!-- Orders Module - Titles -->
+    <string name="orders_title">Заказы</string>
+    <string name="create_order_title">Новый заказ</string>
+    <string name="edit_order_title">Редактирование заказа</string>
+    
+    <!-- Orders Module - Hints -->
+    <string name="hint_search_order">Поиск по телефону, фамилии, модели</string>
+    <string name="hint_object_name">Объект ремонта</string>
+    <string name="hint_client_name">ФИО клиента</string>
+    <string name="hint_client_phone">Номер телефона клиента</string>
+    <string name="hint_problem_description">Описание поломки</string>
+    
+    <!-- Orders Module - Labels -->
+    <string name="label_master">Мастер</string>
+    <string name="label_status">Статус заказа</string>
+    
+    <!-- Orders Module - Buttons -->
+    <string name="btn_create_order">Создать заказ</string>
+    <string name="btn_save_order">Сохранить заказ</string>
+    <string name="btn_update_order">Обновить заказ</string>
+    
+    <!-- Orders Module - Messages -->
+    <string name="empty_orders_list">Нет активных заказов</string>
+    
+    <!-- Menu -->
+    <string name="menu_logout">Выход</string>
+
+    <!-- Stock Module - Titles -->
+    <string name="stock_title">Склад</string>
+    <string name="create_stock_title">Новый товар</string>
+    <string name="edit_stock_title">Редактирование товара</string>
+
+    <!-- Stock Module - Hints -->
+    <string name="hint_search_stock">Поиск по названию или артикулу</string>
+    <string name="hint_article_number">Артикул</string>
+    <string name="hint_item_name">Название товара</string>
+    <string name="hint_quantity">Количество</string>
+    <string name="hint_price">Цена</string>
+
+    <!-- Stock Module - Buttons -->
+    <string name="btn_create_stock">Добавить товар</string>
+    <string name="btn_save_stock">Сохранить товар</string>
+    <string name="btn_update_stock">Обновить товар</string>
+    <string name="btn_receive_stock">Оформить приход</string>
+    <string name="btn_delete_stock">Удалить товар</string>
+
+    <!-- Stock Module - Messages -->
+    <string name="empty_stock_list">Нет товаров на складе</string>
+
+    <!-- Service Module - Titles -->
+    <string name="service_title">Услуги</string>
+    <string name="create_service_title">Новая услуга</string>
+    <string name="edit_service_title">Редактирование услуги</string>
+
+    <!-- Service Module - Hints -->
+    <string name="hint_search_service">Поиск услуги</string>
+    <string name="hint_service_name">Название услуги</string>
+
+    <!-- Service Module - Buttons -->
+    <string name="btn_create_service">Добавить услугу</string>
+    <string name="btn_save_service">Сохранить услугу</string>
+    <string name="btn_update_service">Обновить услугу</string>
+    <string name="btn_delete_service">Удалить услугу</string>
+
+    <!-- Service Module - Messages -->
+    <string name="empty_service_list">Нет доступных услуг</string>
+    
+    <!-- History Module - Titles -->
+    <string name="history_title">Архив</string>
+
+    <!-- History Module - Hints -->
+    <string name="hint_search_history">Поиск по фамилии или телефону</string>
+
+    <!-- History Module - Messages -->
+    <string name="empty_history_list">Архив пуст</string>
+    
+    <!-- Order Details -->
+    <string name="title_services">Услуги</string>
+    <string name="title_parts">Запчасти</string>
+    <string name="btn_add_service">Добавить услугу</string>
+    <string name="btn_add_part">Добавить запчасть</string>
+    <string name="label_total">Итого:</string>
+    <string name="currency_suffix">₽</string>
+    
+    <!-- Employee Module - Titles -->
+    <string name="employees_title">Персонал</string>
+    
+    <!-- Employee Module - Hints -->
+    <string name="hint_search_employee">Поиск по имени или email</string>
+    
+    <!-- Employee Module - Messages -->
+    <string name="empty_employees_list">Нет сотрудников</string>
+
+</resources>

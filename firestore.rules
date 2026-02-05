@@ -1,0 +1,48 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Функция проверки авторизации
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+    
+    // Функция проверки роли администратора
+    function isAdmin() {
+      return isAuthenticated() && 
+             get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin';
+    }
+    
+    // Настройки доступны только администраторам для чтения и записи
+    match /settings/{document=**} {
+      allow read: if isAuthenticated();
+      allow write: if isAdmin();
+    }
+    
+    // Пользователи - чтение для всех авторизованных, запись только для создания своего профиля
+    match /users/{userId} {
+      allow read: if isAuthenticated();
+      allow create: if isAuthenticated() && request.auth.uid == userId;
+      allow update, delete: if isAdmin();
+    }
+    
+    // Заказы - полный доступ для авторизованных пользователей
+    match /orders/{orderId} {
+      allow read, create, update: if isAuthenticated();
+      allow delete: if isAdmin();
+    }
+    
+    // Склад - чтение для всех, запись только для администраторов
+    match /stock/{itemId} {
+      allow read, create: if isAuthenticated();
+      allow update, delete: if isAdmin();
+    }
+    
+    // Услуги - чтение для всех, запись только для администраторов
+    match /services/{serviceId} {
+      allow read: if isAuthenticated();
+      allow create, update, delete: if isAdmin();
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "597977940798",
+    "project_id": "repairshopmanager-2a2aa",
+    "storage_bucket": "repairshopmanager-2a2aa.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:597977940798:android:dbb23cf2724331d9e0e26f",
+        "android_client_info": {
+          "package_name": "com.repairshop.manager"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByC4MsyGceFtMbnU6KD9xboFtoascByoU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
